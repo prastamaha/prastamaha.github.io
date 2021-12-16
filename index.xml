@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prasta Maha</title><link>http://example.org/</link><description>Recent content on Prasta Maha</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>http://example.org/certs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://example.org/certs/</guid><description>Certificates Certified Kubernetes Administrator Verify this cert: here
-Certified Kubernetes Security Specialist Verify this cert: here</description></item><item><title/><link>http://example.org/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://example.org/contact/</guid><description>Contact Me email: prastamaha@gmail.com
+Certified Kubernetes Security Specialist Verify this cert: here</description></item><item><title/><link>http://example.org/contacts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://example.org/contacts/</guid><description>Contact Me email: prastamaha@gmail.com
 linkedin: https://www.linkedin.com/in/prastamaha
 github: https://github.com/prastamaha</description></item><item><title/><link>http://example.org/experiences/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://example.org/experiences/</guid><description>Experiences Cloud Engineer - PT Boer Technology August 2020 - Present
 Status: Full time
@@ -9,4 +9,4 @@ Design and build cloud solutions such as OpenStack, Kubernetes by implementing d
 Status: Intership
 Place: Gianyar, Bali, Indonesia
 Job Desc:
-Fix internet problem on client Build internet infrastructure for clients Network Operation Center - PT Lintas Data Prima May 2018 - June 2018</description></item><item><title/><link>http://example.org/test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://example.org/test/</guid><description>Test Test 2 test hello 2</description></item></channel></rss>
+Fix internet problem on client Build internet infrastructure for clients Network Operation Center - PT Lintas Data Prima May 2018 - June 2018</description></item></channel></rss>
