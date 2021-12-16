@@ -1,5 +1,4 @@
-
-baseURL = 'http://example.org/'
+baseURL = 'https://prastamaha.com/'
 languageCode = 'en-us'
 title = 'Prasta Maha'
 theme = "hugo-theme-shell"
