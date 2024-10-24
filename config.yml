@@ -1,0 +1,313 @@
+## Example Config file
+baseURL: "https://prastamaha.dev"
+theme: "terminalcv"
+title: "Prasta Maha"
+
+params:
+  version: '20241124'
+  description: "Prasta Maha Personal Website"
+  zoomLevel:
+    scale: "1.5"
+  prompt:
+    core:
+      text: "guest@prastamaha"
+      color: 'green'
+      before: ''
+      beforeColor: 'white'
+      after: ':'
+      afterColor: 'white'
+    separator:
+      text: ""
+      color: "" 
+    path: 
+      before: ''
+      beforeColor: 'white'
+      text: '~/aboutme'
+      color: 'orange'
+      after: ''
+      afterColor: 'white'
+    extra:
+      text: "$ "
+      color: 'white'
+
+  # promptColor: grey
+  # promptSimbols: ":~$"
+  # promptSimbolsColor: grey
+  # startxLocation: https://example.com
+  # useLess: true
+  exitLocation: 'https://prastamaha.dev'
+  source: false
+  #use a ‎ (blank character) if your first character of the ascii art is a whitespace
+  greeting: | 
+    ‎
+      ██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗
+      ██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝
+      ██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗  
+      ██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  
+      ╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗
+      ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝ 
+
+      Hi, I’m Prasta Maha. I’m passionate about tech, especially Linux, Cloud Computing, 
+      DevOps, Data Engineering, Security, and Programming. I love exploring new technologies
+      and solving complex problems. When I’m not immersed in code, I share my tech experiences
+      and insights on https://medium.com/prastamaha. Let’s connect and chat about the latest in tech!
+
+    Type 'help' for a list of available commands
+
+  whois: 
+    # settings:
+    #   useLess: true
+    details:
+      name: "Dewa Putu Prasta Maha Gangga"
+      profession: "Devops Engineer @ Bukalapak"
+      location: "South Jakarta, Indonesia"
+      email: "prastamaha@gmail.com"
+      homelink: "https://prastamaha.dev"
+      description: |
+
+        Hi, I’m Prasta Maha. I’m passionate about tech, especially Linux, Cloud Computing, 
+        DevOps, Data Engineering, Security, and Programming. I love exploring new technologies
+        and solving complex problems. When I’m not immersed in code, I share my tech experiences
+        and insights on https://medium.com/prastamaha. Let’s connect and chat about the latest in tech!
+
+  social:
+    settings:
+    #   useLess: true
+    #   hideName: true
+    details:
+    - name: "github"
+      url: "https://github.com/prastamaha"
+    - name: "medium"
+      url: "https://medium.com/prastamaha"
+    - name: "linkedin"
+      url: "https://linkedin.com/in/prastamaha"
+
+  work:
+    # settings:
+    #   useLess: true
+    details:
+    - jobTitle: Cloud Engineer @ PT Boer Technology (Btech)
+      color: "yellow"
+      company: 'System Integrator, focusing into Cloud, DevOps, Security, and Tech Professional Delivery.'
+      location: Bogor, Indonesia
+      date: Jul 2020 - Jan 2022
+      description: |
+        * Successfully designed and implemented OpenStack IaaS Cloud and Kubernetes Clusters for high-profile clients, including:
+          * Badan Siber dan Sandi Negara: Delivered a complete OpenStack IaaS cloud solution with Kubernetes clusters
+            to enhance the agency’s operational efficiency and scalability.
+          * Institut Teknologi Bandung (ITB): Led the implementation of OpenStack IaaS Cloud, integrating a comprehensive 
+            monitoring and billing system to optimize resource management for the institution.
+          * PT Bank Rakyat Indonesia (BRI): Deployed OpenStack IaaS Cloud and Kubernetes clusters to support BRI's 
+            scalable and secure cloud infrastructure.
+
+        * Designed and built robust cloud solutions utilizing OpenStack and Kubernetes, while embedding DevOps principles 
+          to promote automation, collaboration, and continuous integration/deployment practices across teams.
+
+        * Acted as part of the Strategic Project Leadership team for PT Bank Rakyat Indonesia, managing OpenStack and 
+          Kubernetes managed services to ensure the seamless operation of their cloud infrastructure.
+
+    - jobTitle: Devops Engineer @ Mobee Exchange
+      color: "yellow"
+      company: 'Cryptocurrency Exchange Platform' 
+      location: Anywhere
+      date: Jul 2023 - Jan 2024
+      description: |
+        * Led the management of Mobee's entire infrastructure lifecycle, ensuring reliable and efficient operations across the 
+          platform. Managed and optimized Mobee’s infrastructure stack on Amazon Web Services (AWS), including services such as 
+          Elastic Kubernetes Service (EKS), EC2, RDS, S3, CloudFront, etc. to support scalable and secure applications
+
+        * Designed and implemented continuous integration and continuous deployment (CI/CD) pipelines using GitHub Actions, 
+          automating deployment processes for all Mobee services to ensure smooth, consistent releases.
+
+        * Conducted thorough cost planning, monitoring, and optimization to reduce infrastructure spending while maintaining 
+          system performance and reliability.
+
+        * Set up and maintained centralized logging and monitoring solutions using Loki and Grafana, providing real-time insights 
+          into system health and performance for proactive issue resolution.
+
+        * Maintained web application security through Cloudflare-based WAF, protecting the platform from cyber threats and 
+          improving overall security posture.
+
+        * Advised Mobee on industry best practices for cloud infrastructure and DevOps processes, helping the organization 
+          streamline workflows, improve system reliability, and adopt cutting-edge technologies. Led knowledge-sharing sessions 
+          and provided technical guidance to ensure the adoption of scalable and secure practices.
+
+    - jobTitle: Devops Engineer @ PT Bukalapak.com Tbk
+      color: "yellow"
+      company: 'All-Commerce company that provides online and offline platforms to present a fair economy for all.'
+      location: Jakarta, Indonesia
+      date: Jan 2022 - Jan 2024
+      description: |
+        * Responsible to manage of the infrastructure stack for Bukalapak Marketplace, Mitra, and other business verticals, 
+          ensuring high availability and scalability across platforms like Kubernetes, MySQL, PostgreSQL, Redis, MongoDB, Kafka,
+          and OpenSearch, deployed across Google Cloud Platform (GCP) and Azure.
+
+        * Manage the development of infrastructure automation through GitOps, utilizing tools such as Terraform, Ansible, 
+          and scripting languages including Bash, Python, and Golang to ensure consistent and automated provisioning, configuration, 
+          and maintenance. Successfully executed a large-scale cloud migration from GCP to Azure, implementing best practices to 
+          ensure minimal downtime and seamless service continuity during the transition.
+
+        * Achieved significant infrastructure cost optimizations, reducing expenses by up to 30% through strategic resource allocation, 
+          monitoring, and utilizing cloud-native features.
+          
+        * Established comprehensive infrastructure observability and alerting frameworks using Datadog, Prometheus, Grafana, and 
+          PagerDuty to ensure proactive identification and resolution of issues, improving overall system reliability.
+
+        * Maintained and optimized web application firewalls (WAF) with Imperva and managed content delivery network (CDN) services via 
+          Akamai, enhancing both security and performance across global user bases.
+
+    - jobTitle: Software Engineer @ PT Bukalapak.com Tbk
+      color: "yellow"
+      company: 'All-Commerce company that provides online and offline platforms to present a fair economy for all.'
+      location: Jakarta, Indonesia
+      date: Jan 2024 - Present
+      description: |
+        * Successfully implemented user data deletion mechanisms to ensure compliance with Personal Data Protection (PDP) 
+          regulations for Bukalapak Marketplace, safeguarding user privacy and adhering to legal standards.
+
+        * Optimized the user access and refresh token management system, ensuring only six months of data retention, 
+          which resulted in improved database performance and significant cost reductions.
+
+        * Successfully delived implementation of an Envoy Gateway to support gRPC server streaming, enhancing the performance
+          and scalability of the services within Bukalapak.
+
+        * Conducted a dead code analysis on two Ruby services, reducing code complexity and improving maintainability, 
+          which contributed to streamlining development and lowering long-term maintenance costs.
+
+        * Maintained and developed the backend of SmartSari, a Bukalapak business vertical based on Go Lang to ensure 
+          smooth operations and scalability.
+          
+        * Supported the development of the SmartSari Android application using Kotlin, contributing to the enhancement 
+          of mobile features and user experience.
+
+
+  education:
+    details:
+    - courseName: SMK Negeri 1 Denpasar
+      color: "yellow"
+      date: 2017 - 2020
+      description: Computer and Network Engineering
+      
+    - courseName: Binus University
+      color: "yellow"
+      date: Jun 2021 - Jun 2025
+      description: Computer Science (Bachelor Degree)
+
+
+  certifications:
+    # settings:
+    #   useLess: true
+    details:
+    - certName: "CKA: Certified Kubernetes Administrator"
+      company: Linux Foundation
+      date: Jan 2021 - Jan 2024
+      badge: https://www.credly.com/badges/4a796b2c-446d-4e0a-958b-6bfa2a995576
+    - certName: "CKS: Certified Kubernetes Security Specialist"
+      company: Linux Foundation
+      date: Feb 2021 - Feb 2023
+      badge: https://www.credly.com/badges/ef072724-9f3c-46fa-9249-c750f5ea95c1
+    - certName: "CKAD: Certified Kubernetes Application Developer"
+      company: Linux Foundation
+      date: Jan 2022 - Jan 2025
+      badge: https://www.credly.com/badges/b5fa5d77-04a3-4f01-84f7-d5af5efc7c11
+    - certName: "LFCS: Linux Foundation Certified Systems Administrator"
+      company: Linux Foundation
+      date: Nov 2022 - Nov 2025
+      badge: https://www.credly.com/badges/3187e2e0-4491-422e-badb-ce80c1341ded
+    - certName: "Program Committee Member: Kubernetes Community Days 2021"
+      company: Linux Foundation
+      date: Sep 2022
+      badge: https://www.credly.com/badges/ec6255b9-3651-4c3a-a7e3-d5d23261b79e
+    - certName: "Program Committee Member: Kubernetes Community Days 2022"
+      company: Linux Foundation
+      date: Jan 2023
+      badge: https://www.credly.com/badges/f3b12667-b507-46de-a34d-46c2f66e4eee
+
+  # skills:
+  #   settings:
+  #     useLess: true
+  #   details:
+  #   - name: Skill 1
+  #     percentage: 90
+  #     Description: you can add a description
+
+  #   - name: Skill 2
+  #     percentage: 30
+  #     #description: or you can leave it comented   
+
+  #   - name: Skill 3
+  #     color: blue
+  #     percentage: 50
+  #     description: Skill names can have colors too
+
+  # softskills:
+  #   # settings:
+  #   #   useLess: true
+  #   details:
+  #   - name: SoftSkill 1
+  #     color: red
+  #     percentage: 80
+  #     #description:
+
+  #   - name:  SoftSkill 2
+  #     #color: 
+  #     percentage: 90
+  #     description: Description
+
+  # languages:
+  #   # settings:
+  #   #   useLess: true
+  #   details:
+  #   - name: English
+  #     color: Blue
+  #     percentage: 50
+  #     #description: 
+
+  #   - name: Gibberish
+  #     percentage: 100
+  #     description: pasghettipigglywiggly
+
+
+  # projects:
+  #   # settings:
+  #   #   useLess: true
+  #   details:
+  #   - title: Project Red
+  #     color: red
+  #     date: since 2019
+  #     link: https://example.com
+  #     description: Describing red stuff
+
+  #   - title: Project Blue
+  #     color: blue
+  #     date: since 2016
+  #     link: https://example.com/blue
+  #     #description: nothing to describe
+
+  #   - title: Project Default
+  #     date: Since 2017
+  #     link: https://example.com/default
+  #     #description: not there either
+  
+  # misc: 
+  #   # settings:
+  #   #   useLess: true
+  #   commandName: newcommand
+  #   title: "This Section can have a different command name"
+  #   titleColor: teal
+  #   content: |
+  #         Here the title and the content can have different colors
+  #         The content can be multi
+          
+  #         line
+
+  #         And spaces       will be respected as well
+  #         This section will have the default command: misc
+  #         but you can name it something else with the property
+  #         commandName: <String>
+  #         Give it a shot and try and uncomment the line 
+  #         commandName: newcommand
+  #         now instead of misc you can execute the newcommand for this section
+  #         Auto completion will know it too! :D 
+
+    contentColor: orange

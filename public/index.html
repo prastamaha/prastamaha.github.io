@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w2.org/1999/xhtml">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html lang="en">
+    <head>
+	<meta name="generator" content="Hugo 0.136.4">
+            <meta charset="utf-8" />
+    <title>Prasta Maha </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prasta Maha Personal Website">
+    <meta property="og:title" content="Prasta Maha" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://localhost:1313/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
+    <link rel="canonical" href="http://localhost:1313/" />    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.42.2/js/jquery.terminal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/less.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/autocomplete_menu.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.42.0/css/jquery.terminal.min.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            width: 100%;
+            font-size: 18px;
+        }
+    </style>
+    
+
+    </head>
+        <body>
+        
+<script> 
+ 
+window.onload = function() {
+    document.body.style.transform = "scale(1.5)";
+    document.body.style.transformOrigin = "0 0";
+};
+
+
+jQuery(document).ready(function($) {
+    var animation = false;
+
+    var commands = {
+        help: "shows help",
+        less: "Use less as output method",
+        whois: "list basic details",
+        social: "list social networks",
+        work: "list work experience",
+        education: "list education",
+        
+        
+        
+        
+         
+            certifications: "list certifications",
+        
+        
+        
+        
+            source: "shows details about template powering this website",
+        
+        
+            version: "Current version",
+        
+        
+            exit: "exit the terminal",
+        
+        all: "Show all details",
+    };
+
+    function progressBar(number) {
+        var barLength = Math.round(number / 10);
+        var barFilled = Array(barLength + 1).join("&#9611;");
+        var barBlank= Array(11 - barLength).join("&#9617;");
+
+        return barFilled + barBlank
+    }
+
+    
+    function padKey(key, length) {
+        return key + ' '.repeat(length - key.length);
+    }
+
+    function commandsHelp() {
+        let longestKeyLength = Math.max(...Object.keys(commands).map(key => key.length));
+
+        let helpText = ""
+        for (let key in commands) {
+            if (commands.hasOwnProperty(key)) {
+                helpText += ` ${padKey(key, longestKeyLength)}\t${commands[key]}\n`
+            }
+        }
+        return helpText
+    }
+
+    var help = '\n[[b;white;]usage:]\n' +
+                '\n <command> - execute the command\n' +
+                ' less <command> - use less to display the output\n\n' +
+                '\n[[b;white;]Available commands:]\n' + 
+               commandsHelp();
+
+    var whois = [
+     
+        '[[b;grey;]Name:]\t\t\tDewa Putu Prasta Maha Gangga\n' + 
+        '[[b;grey;]Profession:]\t\tDevops Engineer @ Bukalapak\n' +
+        '[[b;grey;]Location:]\t\tSouth Jakarta, Indonesia\n' +
+        
+        '[[b;grey;]Email:]\t\t\tprastamaha@gmail.com\n' +
+        
+        
+        '[[b;grey;]Homepage:]\t\thttps:\/\/prastamaha.dev\n' +
+        
+        
+        '\nHi, I’m Prasta Maha. I’m passionate about tech, especially Linux, Cloud Computing, \nDevOps, Data Engineering, Security, and Programming. I love exploring new technologies\nand solving complex problems. When I’m not immersed in code, I share my tech experiences\nand insights on https:\/\/medium.com\/prastamaha. Let’s connect and chat about the latest in tech!\n' +
+        
+        '\r',
+    
+    ];
+
+    function social() { 
+        var hideName = false;
+        let sMap = { 
+             
+                
+                "github": "https:\/\/github.com\/prastamaha",
+                
+                "medium": "https:\/\/medium.com\/prastamaha",
+                
+                "linkedin": "https:\/\/linkedin.com\/in\/prastamaha",
+                
+            
+        };
+
+        
+
+        socialText = []
+        for (let key in sMap) {
+            if (sMap.hasOwnProperty(key)) {
+                if (hideName) {
+                    socialText.push(sMap[key]);
+                } else { 
+                    let longestKeyLength = Math.max(...Object.keys(sMap).map(key => key.length));
+                    socialText.push(`${padKey(key, longestKeyLength)}\t${sMap[key]}`)
+                };
+            }
+        }
+
+        socialText.push('\r');
+        return socialText
+    }
+
+    var certifications = [
+    
+        
+            '---\n' +
+            '[[b;grey;]CKA: Certified Kubernetes Administrator]\n' +
+            'Jan 2021 - Jan 2024\n' +
+            
+            'Linux Foundation\n' +
+            
+            
+            
+            'Badge: \thttps:\/\/www.credly.com\/badges\/4a796b2c-446d-4e0a-958b-6bfa2a995576\n' +
+            
+            '\r',
+        
+            '---\n' +
+            '[[b;grey;]CKS: Certified Kubernetes Security Specialist]\n' +
+            'Feb 2021 - Feb 2023\n' +
+            
+            'Linux Foundation\n' +
+            
+            
+            
+            'Badge: \thttps:\/\/www.credly.com\/badges\/ef072724-9f3c-46fa-9249-c750f5ea95c1\n' +
+            
+            '\r',
+        
+            '---\n' +
+            '[[b;grey;]CKAD: Certified Kubernetes Application Developer]\n' +
+            'Jan 2022 - Jan 2025\n' +
+            
+            'Linux Foundation\n' +
+            
+            
+            
+            'Badge: \thttps:\/\/www.credly.com\/badges\/b5fa5d77-04a3-4f01-84f7-d5af5efc7c11\n' +
+            
+            '\r',
+        
+            '---\n' +
+            '[[b;grey;]LFCS: Linux Foundation Certified Systems Administrator]\n' +
+            'Nov 2022 - Nov 2025\n' +
+            
+            'Linux Foundation\n' +
+            
+            
+            
+            'Badge: \thttps:\/\/www.credly.com\/badges\/3187e2e0-4491-422e-badb-ce80c1341ded\n' +
+            
+            '\r',
+        
+            '---\n' +
+            '[[b;grey;]Program Committee Member: Kubernetes Community Days 2021]\n' +
+            'Sep 2022\n' +
+            
+            'Linux Foundation\n' +
+            
+            
+            
+            'Badge: \thttps:\/\/www.credly.com\/badges\/ec6255b9-3651-4c3a-a7e3-d5d23261b79e\n' +
+            
+            '\r',
+        
+            '---\n' +
+            '[[b;grey;]Program Committee Member: Kubernetes Community Days 2022]\n' +
+            'Jan 2023\n' +
+            
+            'Linux Foundation\n' +
+            
+            
+            
+            'Badge: \thttps:\/\/www.credly.com\/badges\/f3b12667-b507-46de-a34d-46c2f66e4eee\n' +
+            
+            '\r',
+        
+    
+    ];
+    
+    var work = [
+    
+        
+            '---\n' +
+            '[[b;yellow;]Cloud Engineer @ PT Boer Technology (Btech)]\n' +
+            'System Integrator, focusing into Cloud, DevOps, Security, and Tech Professional Delivery.\n' +
+            'Bogor, Indonesia\n' +
+            'Jul 2020 - Jan 2022\n' +
+            '\n' +
+            '* Successfully designed and implemented OpenStack IaaS Cloud and Kubernetes Clusters for high-profile clients, including:\n  * Badan Siber dan Sandi Negara: Delivered a complete OpenStack IaaS cloud solution with Kubernetes clusters\n    to enhance the agency’s operational efficiency and scalability.\n  * Institut Teknologi Bandung (ITB): Led the implementation of OpenStack IaaS Cloud, integrating a comprehensive \n    monitoring and billing system to optimize resource management for the institution.\n  * PT Bank Rakyat Indonesia (BRI): Deployed OpenStack IaaS Cloud and Kubernetes clusters to support BRI\u0027s \n    scalable and secure cloud infrastructure.\n\n* Designed and built robust cloud solutions utilizing OpenStack and Kubernetes, while embedding DevOps principles \n  to promote automation, collaboration, and continuous integration\/deployment practices across teams.\n\n* Acted as part of the Strategic Project Leadership team for PT Bank Rakyat Indonesia, managing OpenStack and \n  Kubernetes managed services to ensure the seamless operation of their cloud infrastructure.\n' +
+            '\r',
+        
+            '---\n' +
+            '[[b;yellow;]Devops Engineer @ Mobee Exchange]\n' +
+            'Cryptocurrency Exchange Platform\n' +
+            'Anywhere\n' +
+            'Jul 2023 - Jan 2024\n' +
+            '\n' +
+            '* Led the management of Mobee\u0027s entire infrastructure lifecycle, ensuring reliable and efficient operations across the \n  platform. Managed and optimized Mobee’s infrastructure stack on Amazon Web Services (AWS), including services such as \n  Elastic Kubernetes Service (EKS), EC2, RDS, S3, CloudFront, etc. to support scalable and secure applications\n\n* Designed and implemented continuous integration and continuous deployment (CI\/CD) pipelines using GitHub Actions, \n  automating deployment processes for all Mobee services to ensure smooth, consistent releases.\n\n* Conducted thorough cost planning, monitoring, and optimization to reduce infrastructure spending while maintaining \n  system performance and reliability.\n\n* Set up and maintained centralized logging and monitoring solutions using Loki and Grafana, providing real-time insights \n  into system health and performance for proactive issue resolution.\n\n* Maintained web application security through Cloudflare-based WAF, protecting the platform from cyber threats and \n  improving overall security posture.\n\n* Advised Mobee on industry best practices for cloud infrastructure and DevOps processes, helping the organization \n  streamline workflows, improve system reliability, and adopt cutting-edge technologies. Led knowledge-sharing sessions \n  and provided technical guidance to ensure the adoption of scalable and secure practices.\n' +
+            '\r',
+        
+            '---\n' +
+            '[[b;yellow;]Devops Engineer @ PT Bukalapak.com Tbk]\n' +
+            'All-Commerce company that provides online and offline platforms to present a fair economy for all.\n' +
+            'Jakarta, Indonesia\n' +
+            'Jan 2022 - Jan 2024\n' +
+            '\n' +
+            '* Responsible to manage of the infrastructure stack for Bukalapak Marketplace, Mitra, and other business verticals, \n  ensuring high availability and scalability across platforms like Kubernetes, MySQL, PostgreSQL, Redis, MongoDB, Kafka,\n  and OpenSearch, deployed across Google Cloud Platform (GCP) and Azure.\n\n* Manage the development of infrastructure automation through GitOps, utilizing tools such as Terraform, Ansible, \n  and scripting languages including Bash, Python, and Golang to ensure consistent and automated provisioning, configuration, \n  and maintenance. Successfully executed a large-scale cloud migration from GCP to Azure, implementing best practices to \n  ensure minimal downtime and seamless service continuity during the transition.\n\n* Achieved significant infrastructure cost optimizations, reducing expenses by up to 30% through strategic resource allocation, \n  monitoring, and utilizing cloud-native features.\n  \n* Established comprehensive infrastructure observability and alerting frameworks using Datadog, Prometheus, Grafana, and \n  PagerDuty to ensure proactive identification and resolution of issues, improving overall system reliability.\n\n* Maintained and optimized web application firewalls (WAF) with Imperva and managed content delivery network (CDN) services via \n  Akamai, enhancing both security and performance across global user bases.\n' +
+            '\r',
+        
+            '---\n' +
+            '[[b;yellow;]Software Engineer @ PT Bukalapak.com Tbk]\n' +
+            'All-Commerce company that provides online and offline platforms to present a fair economy for all.\n' +
+            'Jakarta, Indonesia\n' +
+            'Jan 2024 - Present\n' +
+            '\n' +
+            '* Successfully implemented user data deletion mechanisms to ensure compliance with Personal Data Protection (PDP) \n  regulations for Bukalapak Marketplace, safeguarding user privacy and adhering to legal standards.\n\n* Optimized the user access and refresh token management system, ensuring only six months of data retention, \n  which resulted in improved database performance and significant cost reductions.\n\n* Successfully delived implementation of an Envoy Gateway to support gRPC server streaming, enhancing the performance\n  and scalability of the services within Bukalapak.\n\n* Conducted a dead code analysis on two Ruby services, reducing code complexity and improving maintainability, \n  which contributed to streamlining development and lowering long-term maintenance costs.\n\n* Maintained and developed the backend of SmartSari, a Bukalapak business vertical based on Go Lang to ensure \n  smooth operations and scalability.\n  \n* Supported the development of the SmartSari Android application using Kotlin, contributing to the enhancement \n  of mobile features and user experience.\n' +
+            '\r',
+        
+    
+    ];
+
+    var education = [
+    
+        
+            '---\n' +
+            '[[b;yellow;]SMK Negeri 1 Denpasar]\n' +
+            '2017 - 2020\n' +
+            
+                "Computer and Network Engineering\n" +
+            
+            "\r",
+        
+            '---\n' +
+            '[[b;yellow;]Binus University]\n' +
+            'Jun 2021 - Jun 2025\n' +
+            
+                "Computer Science (Bachelor Degree)\n" +
+            
+            "\r",
+        
+    
+    ];
+
+    var projects = [
+    
+    ];
+
+    var skills = [
+    
+    ];
+
+    var softSkills = [
+    
+    ];
+  
+    var languages = [
+    
+    ];
+
+    var misc = [
+         
+    ];
+
+    var source =  '        _______            \n' +
+                  '       |       |           \n' +
+                  '       |       |           \n' +
+                  '       |_______|_______    \n' +
+                  '               |       |   \n' +
+                  '               |       |   \n' +
+                  ' ______________|_______|   \n' +
+                  '|      |       |       |   \n' +
+                  '|      |       |       |   \n' +
+                  '|______|_______|_______|   \n' +
+                  '[[;red;]May the source be with you]\n' +
+                  '[[;grey;]https://github.com/coolapso/hugo-theme-terminalcv\n';
+
+    var all = [
+        "################",
+        "# About Me",
+        "################",
+        whois,
+        "################",
+        "# Social",
+        "################",
+        social(),
+        "################",
+        "# experiences",
+        "################",
+        work,
+        "################",
+        "# education",
+        "################",
+        education,
+        skills,
+        softSkills,
+        languages,
+        projects,
+        "################",
+        "# certifications",
+        "################",
+        certifications,
+        misc,
+        
+        
+    ]
+
+    $('body').terminal(function(command, term) {
+
+        var useLess = false;
+        
+
+        function echoArray(array) {
+            if (useLess) {
+                term.less(array);
+            } else {
+                for (i = 0; i < array.length; i += 1) {
+                    term.echo(array[i]);
+                }
+            }
+        }
+        
+        function progress(percent, width) {
+            var size = Math.round(width*percent/100);
+            var left = '', taken = '', i;
+            for (i=size; i--;) {
+                taken += '=';
+            }
+            if (taken.length > 0) {
+                taken = taken.replace(/=$/, '>');
+            }
+            for (i=width-size; i--;) {
+                left += ' ';
+            }
+            return '[' + taken + left + '] ' + percent + '%';
+        }
+
+        function loading () {
+            var i = 0, size = 30;
+            prompt = term.get_prompt();
+            string = progress(0, size);
+            term.set_prompt(progress);
+            animation = true;
+            (function loop() {
+                string = progress(i++, size);
+                term.set_prompt(string);
+                if (i < 100) {
+                    timer = setTimeout(loop, 10);
+                } else {
+                    term.echo(progress(i, size) + ' [[b;green;]OK]').set_prompt(prompt);
+                    animation = false
+                }
+            })();
+        }
+
+        commands = command.split(/[ ]+/);
+        if (commands[0] == 'less') {
+            useLess = true;
+            commands.shift();
+        } 
+                    
+        switch(commands[0]) {
+            case 'whois':
+                
+                echoArray(whois);
+                break;
+            case 'social':
+                
+                echoArray(social());
+                break;
+            case 'work':
+                
+                echoArray(work);
+                break;
+            case 'education':
+                
+                echoArray(education);
+                break;
+            case 'skills':
+                
+                echoArray(skills);
+                break;
+            case 'softskills':
+                
+                echoArray(softSkills);
+                break;
+            case 'languages':
+                
+                echoArray(languages);
+                break;
+            case 'projects':
+                
+                echoArray(projects);
+                break;
+            case 'certifications':
+                
+                term.echo(certifications);
+                break;
+            case 'misc':
+                
+                echoArray(misc);
+                break;
+            case 'help':
+            case '?':
+                term.echo(help);
+                break;
+            case 'all':
+                
+                echoArray(all.flat(1));
+                break;
+            
+            case ':(){:|:&};:':
+                term.echo("nice try");
+                break;
+            case 'source':
+                
+                term.echo(source);
+                break;
+            
+            case 'exit':
+                term.echo("terminating ... ")
+                loading();
+                setTimeout(function(){window.location = 'https:\/\/prastamaha.dev'}, 2000);
+                break;
+            
+            
+            case 'version':
+                term.echo("20241124");
+                break;
+            
+            case '':
+                break;
+            default:
+                term.echo("\nunknown command: " + command + "\n" +
+                          "please type 'help' or '?' for a list of available commands\n");
+        }
+    }, {
+        prompt: '[[;white;]][[;green;]guest@prastamaha][[;white;]:][[;grey;]][[;white;]][[;orange;]~\/aboutme][[;white;]][[;white;]$ ]',
+        greetings: "[[b;white;]‎\n  ██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗\n  ██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝\n  ██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗  \n  ██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  \n  ╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗\n  ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝ \n\n  Hi, I’m Prasta Maha. I’m passionate about tech, especially Linux, Cloud Computing, \n  DevOps, Data Engineering, Security, and Programming. I love exploring new technologies\n  and solving complex problems. When I’m not immersed in code, I share my tech experiences\n  and insights on https:\/\/medium.com\/prastamaha. Let’s connect and chat about the latest in tech!\n\nType \u0027help\u0027 for a list of available commands\n]",
+
+        keydown: function(e, term) {
+            if (animation) {
+                if (e.which == 68 && e.ctrlKey) { 
+                    clearTimeout(timer);
+                    animation = false;
+                    term.echo(string + ' [[b;red;]FAIL]')
+                    .set_prompt(prompt);
+                }
+                return false;
+            }
+        },
+        autocompleteMenu: true,
+        completion: Object.keys(commands)
+        
+    });
+});
+</script>
+
+        </body>
+</html>
