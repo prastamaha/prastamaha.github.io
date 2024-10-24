@@ -1,6 +1,3 @@
-[submodule "themes/hugo-profile"]
-	path = themes/hugo-profile
-	url = https://github.com/gurusabarish/hugo-profile.git
-[submodule "themes/hugo-theme-shell"]
-	path = themes/hugo-theme-shell
-	url = https://github.com/Yukuro/hugo-theme-shell.git
+[submodule "themes/terminalcv"]
+	path = themes/terminalcv
+	url = https://github.com/prastamaha/hugo-theme-terminalcv.git
