@@ -4,7 +4,7 @@ theme: "terminalcv"
 title: "Prasta Maha"
 
 params:
-  version: '20241124'
+  version: '20251019'
   description: "Prasta Maha Personal Website"
   zoomLevel:
     scale: "1.5"
@@ -48,9 +48,14 @@ params:
       ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝ 
 
       Hi, I’m Prasta Maha. I’m passionate about tech, especially Linux, Cloud Computing, 
-      DevOps, Data Engineering, Security, and Programming. I love exploring new technologies
-      and solving complex problems. When I’m not immersed in code, I share my tech experiences
-      and insights on https://medium.com/prastamaha. Let’s connect and chat about the latest in tech!
+      DevOps, Data Engineering, Security, and Programming. 
+      
+      I love exploring new technologies and solving complex problems. When I’m not immersed in code, 
+      I share my tech experiences and insights on https://medium.com/prastamaha 
+      
+      Let’s connect and chat about the latest in tech!
+
+      Type 'social' to see my social media links.
 
     Type 'help' for a list of available commands
 
@@ -59,16 +64,21 @@ params:
     #   useLess: true
     details:
       name: "Dewa Putu Prasta Maha Gangga"
-      profession: "Devops Engineer @ Bukalapak"
-      location: "South Jakarta, Indonesia"
+      profession: "Senior Devops Engineer @ Krom Bank Indonesia"
+      location: "Jakarta, Indonesia"
       email: "prastamaha@gmail.com"
       homelink: "https://prastamaha.dev"
       description: |
 
         Hi, I’m Prasta Maha. I’m passionate about tech, especially Linux, Cloud Computing, 
-        DevOps, Data Engineering, Security, and Programming. I love exploring new technologies
-        and solving complex problems. When I’m not immersed in code, I share my tech experiences
-        and insights on https://medium.com/prastamaha. Let’s connect and chat about the latest in tech!
+        DevOps, Data Engineering, Security, and Programming. 
+        
+        I love exploring new technologies and solving complex problems. When I’m not immersed in code, 
+        I share my tech experiences and insights on https://medium.com/prastamaha
+        
+        Let’s connect and chat about the latest in tech!
+
+        Type 'social' to see my social media links.
 
   social:
     settings:
@@ -160,7 +170,7 @@ params:
       color: "yellow"
       company: 'All-Commerce company that provides online and offline platforms to present a fair economy for all.'
       location: Jakarta, Indonesia
-      date: Jan 2024 - Present
+      date: Jan 2024 - Dec 2024
       description: |
         * Successfully implemented user data deletion mechanisms to ensure compliance with Personal Data Protection (PDP) 
           regulations for Bukalapak Marketplace, safeguarding user privacy and adhering to legal standards.
@@ -180,6 +190,18 @@ params:
         * Supported the development of the SmartSari Android application using Kotlin, contributing to the enhancement 
           of mobile features and user experience.
 
+    - jobTitle: Senior Devops Engineer @ Krom Bank Indonesia
+      color: "yellow"
+      company: 'Digital Banking Platform'
+      location: Jakarta, Indonesia
+      date: Dec 2024 - Present
+      description: |
+        * Responsible to manage of the e2e infrastructure stack for Krom Bank Indonesia, ensuring high availability and scalability across 
+          platforms like ECS, Kubernetes, PostgreSQL, Redis, Grafana, and etc deployed across AWS and GCP.
+
+        * Led terraform refactor initiative to modularize and optimize infrastructure as code, improving maintainability and scalability.
+
+        * Led service migration project of ECS to EKS, enhancing container orchestration, deployment efficiency and cost reduction.
 
   education:
     details:
