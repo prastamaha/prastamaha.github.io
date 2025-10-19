@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:63190/categories/</loc>
+    <loc>https://prastamaha.dev/categories/</loc>
   </url><url>
-    <loc>http://localhost:63190/</loc>
+    <loc>https://prastamaha.dev/</loc>
   </url><url>
-    <loc>http://localhost:63190/tags/</loc>
+    <loc>https://prastamaha.dev/tags/</loc>
   </url>
 </urlset>

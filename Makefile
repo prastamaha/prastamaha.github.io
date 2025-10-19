@@ -25,7 +25,7 @@ dev: install ## Setup development environment and start Hugo server
 
 build: install ## Build the static site for production
 	@echo "🏗️  Building site for production..."
-	hugo --minify --gc
+	hugo --gc
 	@echo "✅ Site built successfully in ./public/"
 
 serve: build ## Build and serve the site locally (production mode)
