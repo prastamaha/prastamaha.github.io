@@ -91,6 +91,8 @@ params:
       url: "https://medium.com/prastamaha"
     - name: "linkedin"
       url: "https://linkedin.com/in/prastamaha"
+    - name: "telegram"
+      url: "@prastamaha"
 
   work:
     # settings:
